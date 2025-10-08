@@ -3,45 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PlantPal 🌱</title>
+  <title>PlantPal 🌱 - Welcome!</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="leaves"></div> <!-- floating leaves animation -->
+<!--heading part: adding the title of the widget and some qoutes.-->
+  <div class="leaves"></div>
 
-  <div class="container">
-    <h1>🌿 PlantPal 🌿</h1>
-    <p class="subtitle">Grow your plant as you grow your focus 🌸</p>
+  <section class="first">
 
-    <div class="plant-name">
-      <input type="text" id="plantName" placeholder="Name your plant..." />
-      <button id="saveName">🌼 Save</button>
-    </div>
-    <p id="greeting"></p>
-
-    <div class="plant-container">
-      <img id="plant" src="2-removebg-preview.png" alt="Plant Stage">
+    <div class="container">
+        <img src="logoo-removebg-preview.png" alt="Rainbow Heart" class="heart">
+        <h1 class="title">🌿 PlantPal 🌿</h1>
+        <p class="subtitle">Grow your plant as you grow your focus 🌸</p>
     </div>
 
-    <div class="timer">
-      <h2 id="time">00:00</h2>
-      <button id="startBtn">Start</button>
-      <button id="resetBtn">Reset</button>
-    </div>
+    <button onclick="redirectToSigninPage()" class="btn-start">Get Started ♡</button>
 
-    <div class="progress-container">
-      <p>Growth Progress</p>
-      <div class="progress-bar">
-        <div id="progress"></div>
-      </div>
-    </div>
+  </section>
 
-    <button id="musicBtn">🎵 Play Music</button>
-    <audio id="bgMusic" loop>
-      <source src="music/soft.mp3" type="audio/mp3">
-    </audio>
-  </div>
 
-  <script src="script.js"></script>
 </body>
+
+
 </html>
