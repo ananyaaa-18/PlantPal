@@ -28,11 +28,11 @@ function updatePlant() {
 
   if (seconds >= 60 && plantStage < 2) {
     plantStage = 2;
-    plantImage.src = "images/plant2.png";
+    plantImage.src = "cutie-removebg-preview.png";
   }
   if (seconds >= 120 && plantStage < 3) {
     plantStage = 3;
-    plantImage.src = "images/plant3.png";
+    plantImage.src = "baby-removebg-preview.png";
   }
 
   saveProgress();
@@ -54,7 +54,7 @@ function resetTimer() {
   seconds = 0;
   progress = 0;
   plantStage = 1;
-  plantImage.src = "images/plant1.png";
+  plantImage.src = "baby-removebg-preview.png";
   progressBar.style.width = "0%";
   updateDisplay();
   localStorage.removeItem("plantProgress");
@@ -99,7 +99,7 @@ function createLeaves() {
   const leaves = document.querySelector(".leaves");
   for (let i = 0; i < 10; i++) {
     const leaf = document.createElement("img");
-    leaf.src = "images/leaf.png";
+    leaf.src = "2-removebg-preview.png";
     leaf.classList.add("leaf");
     leaf.style.left = Math.random() * 100 + "vw";
     leaf.style.animationDuration = 8 + Math.random() * 4 + "s";
@@ -118,7 +118,7 @@ window.onload = () => {
     seconds = saved.seconds;
     plantStage = saved.plantStage;
     progress = saved.progress;
-    plantImage.src = `images/plant${plantStage}.png`;
+    plantImage.src = `cutie-removebg-preview`;
     progressBar.style.width = `${progress}%`;
     updateDisplay();
   }
