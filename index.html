@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlantPal 🌱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="leaves"></div> <!-- floating leaves animation -->
+
+  <div class="container">
+    <h1>🌿 PlantPal 🌿</h1>
+    <p class="subtitle">Grow your plant as you grow your focus 🌸</p>
+
+    <div class="plant-name">
+      <input type="text" id="plantName" placeholder="Name your plant..." />
+      <button id="saveName">🌼 Save</button>
+    </div>
+    <p id="greeting"></p>
+
+    <div class="plant-container">
+      <img id="plant" src="images/plant1.png" alt="Plant Stage">
+    </div>
+
+    <div class="timer">
+      <h2 id="time">00:00</h2>
+      <button id="startBtn">Start</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="progress-container">
+      <p>Growth Progress</p>
+      <div class="progress-bar">
+        <div id="progress"></div>
+      </div>
+    </div>
+
+    <button id="musicBtn">🎵 Play Music</button>
+    <audio id="bgMusic" loop>
+      <source src="music/soft.mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
