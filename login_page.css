@@ -169,7 +169,6 @@ body {
     font-size: 25px;
     color: var(--davy-gray);
     line-height: 1.5;
-    align-content: center;
 }
 
 .custom-input::placeholder {
@@ -179,4 +178,16 @@ body {
 
 .custom-input:focus {
     box-shadow: 0 4px 15px var(--jordy-blue);
+}
+
+@keyframes gradientBg {
+  30% {
+    background-position: 0% 50%;
+  }
+  20% {
+    background-position: 100% 50%;
+  }
+  90% {
+    background-position: 0% 50%;
+  }
 }
