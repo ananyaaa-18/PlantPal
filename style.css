@@ -35,10 +35,14 @@
 .title {
   font-size: 80px;
   text-align: center;
-  color: var(--columbia-blue);
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   font-style: normal;
+  background-image: linear-gradient(to right, #ef5350, #ab47bc, #2196f3, #4caf50, #ffc107);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 body {
