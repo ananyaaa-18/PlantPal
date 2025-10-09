@@ -10,6 +10,8 @@ function createLeaves() {
   }
 }
 
+window.addEventListener("DOMContentLoaded", createLeaves);
+
 function redirectToFirstPage()
 {
   window.location = "firstpage.html";
