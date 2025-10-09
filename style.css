@@ -1,3 +1,14 @@
+
+/* CSS Variables for Color Scheme */
+:root {
+
+  --columbia-blue: #CAE5FF;
+  --jordy-blue: #89BBFE;
+  --non-photo-blue: #ACEDFF;
+  --glaucous: #6F8AB7;
+  --davy-gray: #615DC6;
+}
+
 .first {
   display: flex;
   flex-direction: column;
@@ -9,32 +20,20 @@
 
 .window-bar {
   width: 100%;
-  background: #f8c6d4;
+  background: var(--jordy-blue);
   padding: 8px 16px;
   font-size: 18px;
   text-align: left;
   font-family: monospace;
-  color: #4a235a;
+  color: var(--columbia-blue);
 }
 
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(-45deg, #c1f0c1, #a8dadc, #f1faee, #caf0f8);
+  background: linear-gradient(-45deg, var(--davy-gray), var(--non-photo-blue), var(--columbia-blue));
   background-size: 400% 400%;
   animation: gradient 12s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .heart {
@@ -49,7 +48,7 @@ body {
 }
 
 .btn-start {
-  background: linear-gradient(135deg, #ffe5ec, #ffda77);
+  background: linear-gradient(135deg, var(--columbia-blue), var(--non-photo-blue));
   border: none;
   padding: 12px 30px;
   font-size: 1.2rem;
@@ -65,3 +64,23 @@ body {
   box-shadow: 0px 8px 15px rgba(0,0,0,0.2);
 }
 
+.subtitle {
+    font-family: sans-serif; 
+    font-size: 1rem;
+    color: var(--text-quote);
+    line-height: 1.5;
+    font-style: italic;
+    padding: 0 10px;
+}
+
+@keyframes gradientBg {
+  30% {
+    background-position: 0% 50%;
+  }
+  55% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
