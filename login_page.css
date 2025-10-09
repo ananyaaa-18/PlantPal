@@ -15,7 +15,7 @@
 
 body {
     font-family: "Abril Fatface", serif;
-    background-color: var(--non-photo-blue);
+    background-color: var(--jordy-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body {
 .container {
     width: 250%;
     max-width: 1000px; 
-    background-color: var(--glaucous);
+    background-color: var(--non-photo-blue);
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -50,15 +50,15 @@ body {
     background: linear-gradient(90deg, var(--columbia-blue) 0%, var(--jordy-blue) 100%);
     color: var(--text-dark);
     border: none;
-    border-radius: 50px;
+    border-radius: 200px;
     padding: 8px 15px;
-    font-size: 0.8rem;
+    font-size: 30px;
     font-weight: 700;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 45px;
-    left: 20px;
+    top: 80px;
+    left: 60px;
     display: flex;
     align-items: center;
     transition: all 0.3s ease;
@@ -70,7 +70,7 @@ body {
 }
 
 .title {
-    font-size: 80px;
+    font-size: 100px;
     text-align: center;
     font-family: "Abril Fatface", serif;
     font-weight: 400;
@@ -91,7 +91,7 @@ body {
 }
 
 .gif1 {
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 
@@ -99,7 +99,7 @@ body {
     background: linear-gradient(135deg, var(--columbia-blue), var(--non-photo-blue));
     border: none;
     padding: 12px 30px;
-    font-size: 1.2rem;
+    font-size: 30px;
     font-weight: bold;
     border-radius: 50px;
     cursor: pointer;
@@ -119,21 +119,24 @@ body {
 }
 
 .quote {
-    font-family: sans-serif; 
-    font-size: 1rem;
-    color: var(--text-quote);
-    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
     font-style: italic;
+    font-size: 25px;
+    color: var(--davy-gray);
+    line-height: 1.5;
     padding: 0 10px;
+    text-align: center;
 }
 
 .para {
-    font-family: cursive;
-    font-size: 1.5rem;
-    color: var(--text-dark);
+    font-size: 30px;
     opacity: 0.6;
     margin: 5px 0;
     line-height: 0;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 .login-form-area {
@@ -166,6 +169,7 @@ body {
     font-size: 25px;
     color: var(--davy-gray);
     line-height: 1.5;
+    align-content: center;
 }
 
 .custom-input::placeholder {
