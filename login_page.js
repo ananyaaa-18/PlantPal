@@ -1,6 +1,9 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import { db } from './firebase.js';
+import { setDoc, doc } from "firebase/firestore";
+
 
 // Firebase
 const firebaseConfig = {
@@ -19,7 +22,3 @@ const db = getFirestore(app);
 
 export { auth, db };
 
-function logout()
-{
-  window.location = "index.html";
-};
