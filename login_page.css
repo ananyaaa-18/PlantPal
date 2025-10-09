@@ -181,13 +181,13 @@ body {
 }
 
 @keyframes gradientBg {
-  30% {
+  40% {
     background-position: 0% 50%;
   }
-  20% {
+  40% {
     background-position: 100% 50%;
   }
-  90% {
+  20% {
     background-position: 0% 50%;
   }
 }
