@@ -1,8 +1,8 @@
 "use client";
-import "./globals.css";
+import "./global.css";
 import { useEffect } from "react";
 import Image from "next/image";
-import leafGif from "../public/cute-leaf.gif"; 
+import leafGif from "../public/cute leaf.gif"; 
 
 export default function HomePage() {
   useEffect(() => {
