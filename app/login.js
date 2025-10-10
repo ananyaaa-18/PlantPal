@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
-import { app } from "../../firebase/firebaseConfig"; // adjust path if needed
-
+import { app } from "../../firebase/firebaseConfig"; 
 const auth = getAuth(app);
 
 export default function LoginPage() {

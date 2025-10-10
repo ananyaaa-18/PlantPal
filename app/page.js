@@ -1,43 +1,50 @@
 "use client";
+import "./globals.css";
+import { useEffect } from "react";
+import Image from "next/image";
+import leafGif from "../public/cute-leaf.gif"; 
 
-import { useEffect, useState } from "react";
-import { db } from "../firebase/firebaseConfig";
-import { collection, getDocs } from "firebase/firestore";
-
-export default function TestFirebasePage() {
-  const [plants, setPlants] = useState([]);
-
+export default function HomePage() {
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const querySnapshot = await getDocs(collection(db, "plants"));
-        const plantList = querySnapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-        setPlants(plantList);
-      } catch (error) {
-        console.error("Error fetching data: ", error);
-      }
-    };
-
-    fetchData();
+    const leavesContainer = document.querySelector(".leaves");
+    for (let i = 0; i < 10; i++) {
+      const leaf = document.createElement("img");
+      leaf.src = "/flower1.png"; 
+      leaf.classList.add("leaf");
+      leaf.style.left = Math.random() * 100 + "vw";
+      leaf.style.animationDuration = 8 + Math.random() * 4 + "s";
+      leavesContainer.appendChild(leaf);
+    }
   }, []);
 
+  const redirectToLogin = () => {
+    window.location.href = "/login";
+  };
+
   return (
-    <div style={{ padding: "2rem" }}>
-      <h1>🌿 Firebase Connection Test</h1>
-      <ul>
-        {plants.length > 0 ? (
-          plants.map((p) => (
-            <li key={p.id}>
-              <strong>{p.name}</strong> — {p.type}
-            </li>
-          ))
-        ) : (
-          <p>No plants found (or Firestore empty).</p>
-        )}
-      </ul>
+    <div>
+      <div className="leaves"></div>
+      <div className="window-bar">
+        <span className="window-icons">✖ ◻ ─</span>
+      </div>
+
+      <section className="first">
+        <div className="container">
+          <h1 className="title">
+            <Image src={leafGif} alt="cute gif" className="gif1" />
+            PlantPal
+            <Image src={leafGif} alt="cute gif" className="gif1" />
+          </h1>
+
+          <center>
+            <p className="subtitle">Grow your plant as you grow your focus 🌸</p>
+          </center>
+        </div>
+
+        <button onClick={redirectToLogin} className="btn-start">
+          Get Started ♡
+        </button>
+      </section>
     </div>
   );
 }
