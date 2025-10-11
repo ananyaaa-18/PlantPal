@@ -3,7 +3,7 @@ import "./global.css";
 import { useEffect } from "react";
 import Image from "next/image";
 import leafGif from "../public/cute leaf.gif"; 
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 
 export default function HomePage() {
   useEffect(() => {
