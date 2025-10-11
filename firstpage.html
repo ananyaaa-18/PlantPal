@@ -18,43 +18,57 @@
 
 </head>
 <body>
-  <div class="leaves"></div> <!-- floating leaves animation -->
 
-  <div class="container">
-    <h1>🌿 PlantPal 🌿</h1>
-    <p class="subtitle">✦. ── Lets Focus! ── .✦</p>
+  <center>
 
-    <div class="plant-name">
-      <input type="text" id="plantName" placeholder="Name your plant..." />
-      <button id="saveName">🌼 Save</button>
-    </div>
-    
-    <p id="greeting" class="greetings"></p>
+    <div class="leaves"></div> <!-- floating leaves animation -->
 
-    <p id="qoute" class="qoutes"></p>
+    <div class="container">
 
-    <div class="plant-container">
-      <img id="plant" src="Plant2.png" alt="Plant Stage">
-    </div>
+      <h1 class="title"> <img src="cute leaf.gif" alt="cute gif" class="gif1">
+           PlantPal 
+          <img src="cute leaf.gif" alt="cute gif" class="gif1">
+      </h1>
 
-    <div class="timer">
-      <h2 id="time">00:00</h2>
-      <button id="startBtn">Start</button>
-      <button id="resetBtn">Reset</button>
-    </div>
+      <p class="subtitle">✦. ── Lets Focus! ── .✦</p>
 
-    <div class="progress-container">
-      <p>Growth Progress</p>
-      <div class="progress-bar">
-        <div id="progress"></div>
+      <div class="choose-plant">
+        <h3 class="subheading"> Choose Your Plant 𖡼.𖤣𖥧𖡼.𖤣𖥧 </h3>
       </div>
+
+      <div class="plant-name">
+        <input class="plantName" type="text" id="plantName" placeholder="Name your plant..." />
+        <button id="saveName" class="save-btn">🌼 Save</button>
+      </div>
+
+      <p id="greeting" class="greetings"></p>
+
+      <p id="qoute" class="qoutes"></p>
+
+      <div class="plant-container">
+        <img id="plant" src="Plant2.png" alt="Plant Stage" class="chosen-plant">
+      </div>
+
+      <div class="timer">
+        <h2 id="time" class="timerTime">00:00</h2>
+        <button id="startBtn" class="start-btn">Start</button>
+        <button id="resetBtn" class="reset-btn">Reset</button>
+      </div>
+
+      <div class="progress-container">
+        <p class="para"> ₊˚ʚ 🌱 ₊˚✧ ﾟ. Growth Progress ୧ ‧₊˚ 🌿⋅</p>
+        <div class="progress-bar">
+          <div id="progress"></div>
+        </div>
+      </div>
+
+      <button id="musicBtn" class="music-btn">🎵 Play Music</button>
+      <audio id="bgMusic" loop>
+        <source src="music/soft.mp3" type="audio/mp3">
+      </audio>
     </div>
 
-    <button id="musicBtn">🎵 Play Music</button>
-    <audio id="bgMusic" loop>
-      <source src="music/soft.mp3" type="audio/mp3">
-    </audio>
-  </div>
+  </center>
 
   <script src="firstpage.js"></script>
 </body>

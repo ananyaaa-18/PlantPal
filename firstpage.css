@@ -46,36 +46,64 @@
   100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
 }
 
+.title {
+  font-size: 150px;
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: linear-gradient(to right, var(--green), var(--cambridge-blue), var(--mint), var(--mint-green), var(--celadon));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.gif1 {
+  width: 150px;
+  height: auto;
+}
+
+.subtitle {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 25px;
+    color: var(--mint);
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
 .plant-name input {
-  border: 2px solid var(--leaf-green);
+  border: 2px solid var(--mint);
   border-radius: 8px;
   padding: 8px;
   outline: none;
 }
 
 .plant-name button {
-  background: var(--dark-green);
+  background: linear-gradient(135deg, var(--columbia-blue), var(--non-photo-blue));
   border-radius: 8px;
   padding: 8px 10px;
-  color: white;
+  color: var(--text-dark);
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .plant-name button:hover {
-  background: var(--leaf-green);
+  background: var(--celadon);
 }
 
 #greeting {
-  font-size: 16px;
+  font-size: 50px;
   color: var(--text-dark);
   margin-bottom: 15px;
 }
 
 #musicBtn {
-  background: var(--soft-pink);
-  color: var(--dark-green);
+  background: var(--mint-green);
+  color: var(--dark-grey);
   border: none;
   border-radius: 10px;
   padding: 8px 12px;
