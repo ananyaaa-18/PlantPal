@@ -20,6 +20,7 @@
   --non-photo-blue: #ACEDFF;
   --white: #FFFFFF;
   --text-dark: #2c2c2c;
+  --cream: #FFFDD0;
 }
 
 .first {
@@ -33,25 +34,13 @@
   z-index: 1; 
 }
 
-.window-bar {
-  width: 100%;
-  background: var(--jordy-blue);
-  padding: 8px 16px;
-  font-size: 18px;
-  text-align: left;
-  color: var(--columbia-blue);
-  font-family: "Abril Fatface", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .title {
-  font-size: 80px;
+  font-size: 150px;
   text-align: center;
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   font-style: normal;
-  background-image: linear-gradient(to right, #ef5350, #ab47bc, #2196f3, #4caf50, #ffc107);
+  background-image: linear-gradient(to right, var(--green), var(--cambridge-blue), var(--mint), var(--mint-green), var(--celadon));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -61,18 +50,18 @@
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(-45deg, var(--davy-gray), var(--non-photo-blue), var(--columbia-blue));
+  background: linear-gradient(-45deg, var(--cambridge-blue), var(--cream));
   background-size: 400% 400%;
-  animation: gradient 12s ease infinite;
+  animation: gradient 30s ease infinite;
 }
 
 .gif1 {
-  width: 100px;
+  width: 150px;
   height: auto;
 }
 
 .btn-start {
-  background: linear-gradient(135deg, var(--columbia-blue), var(--non-photo-blue));
+  background: linear-gradient(135deg, var(--celadon), var(--non-photo-blue));
   border: none;
   padding: 12px 30px;
   font-size: 1.2rem;
@@ -93,22 +82,11 @@ body {
     font-weight: 700;
     font-style: italic;
     font-size: 25px;
-    color: var(--davy-gray);
+    color: var(--mint);
     line-height: 1.5;
     padding: 0 10px;
 }
 
-@keyframes gradientBg {
-  30% {
-    background-position: 0% 50%;
-  }
-  55% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 .leaves {
   position: fixed;
@@ -116,17 +94,17 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* allows clicks to pass through */
+  pointer-events: none; 
   overflow: hidden;
-  z-index: 0; /* sits behind content */
+  z-index: 0; 
 }
 
 .leaf {
   position: absolute;
   top: -10%;
-  width: 25px;
-  opacity: 0.6;
-  animation: fall 10s linear infinite;
+  width: 80px;
+  opacity: 0.5;
+  animation: fall 20s linear infinite;
 }
 
 @keyframes fall {
