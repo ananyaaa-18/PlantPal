@@ -112,3 +112,126 @@ body {
   50% { transform: translate(20px, 50vh) rotate(180deg); opacity: 0.6; }
   100% { transform: translate(-20px, 110vh) rotate(360deg); opacity: 0; }
 }
+
+.image-cluster {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  margin: auto;
+}
+
+.img1 {
+  top: 10%;
+  left: 20%;
+  transform: rotate(-12deg);
+}
+
+.img2 {
+  top: 12%;
+  right: 80%;
+  transform: rotate(-8deg);
+}
+
+.img3 {
+  top: 30%;
+  left: 5%;
+  transform: rotate(6deg);
+}
+
+.img4 {
+  top: 20%;
+  right: 15%;
+  transform: rotate(-8deg);
+}
+
+.img5 {
+  bottom: 10%;
+  left: 7%;
+  transform: rotate(15deg);
+}
+
+.img6 {
+  bottom: 12%;
+  right: 5%;
+  transform: rotate(-10deg);
+}
+
+.img7 {
+  bottom: 25%;
+  left: 20%;
+  transform: rotate(8deg)
+}
+
+.img8 {
+  bottom: 20%;
+  right: 15%;
+  transform: rotate(5deg);
+}
+
+.img9 {
+  top: 30%;
+  right: 3%;
+  transform: rotate(-6deg);
+}
+
+.img10 {
+  bottom: 70%;
+  right: 25%;
+  transform: rotate(10deg);
+}
+
+.img11 {
+  top: 5%;
+  left: 80%;
+  transform: rotate(-8deg);
+}
+
+.img12 {
+  bottom: 75%;
+  left: 13%;
+  transform: rotate(5deg);
+}
+
+.image-cluster img:hover {
+  transform: scale(1.1) rotate(0deg);
+  z-index: 10;
+  opacity: 0.9;
+}
+
+@keyframes floaty {
+  0%, 100% {
+    transform: translateY(0) rotate(var(--angle));
+  }
+  50% {
+    transform: translateY(-10px) rotate(calc(var(--angle) + 3deg));
+  }
+}
+
+.image-cluster img {
+  position: absolute;
+  width: 245px;
+  height: auto;
+  padding: 50px;
+  opacity: 0.9;
+  transition: transform 0.6s ease;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+  animation: floaty 5s ease-in-out infinite;
+}
+
+.img1 { --angle: -12deg; }
+.img2 { --angle: -8deg; }
+.img3 { --angle: 6deg; }
+.img4 { --angle: -8deg; }
+.img5 { --angle: 15deg; }
+.img6 { --angle: -10deg; }
+.img7 { --angle: 8deg; }
+.img8 { --angle: 5deg; }
+.img9 { --angle: -6deg; }
+.img10 { --angle: 10deg; }
+.img11 { --angle: -8deg; }
+.img12 { --angle: 5deg; }
