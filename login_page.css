@@ -4,13 +4,22 @@
 
 /* CSS Variables for Color Scheme */
 :root {
-    --columbia-blue: #CAE5FF;
-    --jordy-blue: #89BBFE;
-    --non-photo-blue: #ACEDFF;
-    --glaucous: #6F8AB7;
-    --davy-gray: #615DC6;
-    --white: #FFFFFF;
-    --text-dark: #2c2c2c;
+
+  --light-grey: #DADDD8;
+  --light-green: #C7D59F;
+  --mint-green: #B7CE63;
+  --green: #8FB339;
+  --dark-grey: #4B5842;
+  --mint: #3AB795;
+  --celadon: #A0E8AF;
+  --cambridge-blue: #86BAA1;
+  --beige: #EDEAD0;
+  --sunglow: #FFCF56;
+  --columbia-blue: #CAE5FF;
+  --jordy-blue: #89BBFE;
+  --non-photo-blue: #ACEDFF;
+  --white: #FFFFFF;
+  --text-dark: #2c2c2c;
 }
 
 body {
