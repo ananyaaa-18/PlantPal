@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--importing css fonts (Lato)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!--importing css fonts (Abril Fatface)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PlantPal 🌱</title>
+  <title>PlantPal 🌱 - Pomodoro!</title>
   <link rel="stylesheet" href="firstpage.css">
+
 </head>
 <body>
   <div class="leaves"></div> <!-- floating leaves animation -->
 
   <div class="container">
     <h1>🌿 PlantPal 🌿</h1>
-    <p class="subtitle">Grow your plant as you grow your focus 🌸</p>
+    <p class="subtitle">✦. ── Lets Focus! ── .✦</p>
 
     <div class="plant-name">
       <input type="text" id="plantName" placeholder="Name your plant..." />
       <button id="saveName">🌼 Save</button>
     </div>
-    <p id="greeting"></p>
+    
+    <p id="greeting" class="greetings"></p>
+
+    <p id="qoute" class="qoutes"></p>
 
     <div class="plant-container">
       <img id="plant" src="Plant2.png" alt="Plant Stage">
